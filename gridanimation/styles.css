@@ -1,0 +1,58 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252423;
+}
+
+#emoji {
+    font-size: 150px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.demo-wrapper {
+    position: relative;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    position: absolute;
+}
+
+#hexagon {
+    width: 100px;
+    height: 57.735px;
+    background: red;
+    position: absolute;
+}
+
+#hexagon::before {
+    content: "";
+    position: absolute;
+    top: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid #252423;
+}
+
+#hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid #252423;
+}

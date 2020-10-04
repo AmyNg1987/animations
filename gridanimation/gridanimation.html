@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset=UTF-8 />
+
+  <link href="styles.css" rel="stylesheet" type="text/css"  />
+
+    </head>
+
+<div class="demo-wrapper">
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+
+      </div>
+
+
+      <script src='anime.min.js'></script>
+  <script>
+anime({
+  targets: '.square',
+  translateX: anime.stagger([0,90],{grd:[14,5], from: 'center, axis: 'x'})
+  translateY: anime.stagger([0,90],{grd:[14,5], from: 'center, axis: 'x'})
+  rotateZ: anime.stagger([0,90],{grd:[14,5], from: 'center, axis: 'x'})
+  duration: 2000,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutQuad',
+});
+
+  </script>
+
+      </body>
+    </html>

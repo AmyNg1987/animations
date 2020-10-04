@@ -1,0 +1,142 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252423;
+}
+
+#emoji {
+    font-size: 150px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.demo-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 290px;
+    height: 100%;
+}
+
+.demo {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, .65);
+    cursor: pointer;
+}
+
+svg {
+    position: absolute
+}
+
+.color-orange,
+.color-properties {
+    color: #FF8F42;
+}
+
+
+/**overlay **/
+
+.styles_overlay__CLSq- {
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    padding: 1.2rem;
+}
+
+.styles_modal__gNwvD {
+    max-width: 800px;
+    position: relative;
+    padding: 1.2rem;
+    background: #ffffff;
+    background-clip: padding-box;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+.styles_modalCenter__L9F2w {
+    margin: auto;
+}
+
+.styles_closeButton__20ID4 {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+}
+
+.styles_closeIcon__1QwbI {}
+
+.styles_transitionEnter__3j_-a {
+    opacity: 0.01;
+}
+
+.styles_transitionEnterActive___eQs7 {
+    opacity: 1;
+    transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.styles_transitionExit__1KmEf {
+    opacity: 1;
+}
+
+.styles_transitionExitActive__1nQXw {
+    opacity: 0.01;
+    transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hexagon {
+    width: 100px;
+    height: 57.735px;
+    background: #FF8F42;
+    position: relative;
+}
+
+#hexagon::before {
+    content: "";
+    position: absolute;
+    top: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid #FF8F42;
+}
+
+#hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid #FF8F42;
+    filter: url('#displacementFilter')
+}
