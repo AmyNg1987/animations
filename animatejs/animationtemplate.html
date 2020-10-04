@@ -1,0 +1,32 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+
+<meta charset=UTF-8 />
+
+  <link href="styles.css" rel="stylesheet" type="text/css"  />
+
+    </head>
+
+<body>
+
+  <div class="demo-wrapper">
+<div class="dot"></div>
+</div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
+  <script>
+anime({
+  targets: '.dot',
+  keyframes: [
+  {translateX: 250 ,scale: 1}
+  {translateY: 50 ,scale: 1.5}
+  {translateX: -250, scale: 2}
+  {translateY: -50, scale:2.5}
+  ],
+  duration: 3000,
+  loop: true
+});
+  </script>
+
+ </body>
+</html>
