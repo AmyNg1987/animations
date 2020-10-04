@@ -1,1 +1,1 @@
-animatejs for fun (motionpath)
+animatejs for fun 
