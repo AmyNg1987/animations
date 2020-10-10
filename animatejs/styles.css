@@ -3,6 +3,7 @@
     width: 25px;
     background-color: rgb(76, 150, 112);
     border-radius: 50%;
+    margin: 0 auto;
     display: absolute;
 }
 
