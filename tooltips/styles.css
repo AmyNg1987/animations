@@ -1,4 +1,5 @@
 
+
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -27,6 +28,13 @@
 }
 
 .tooltip .tooltiptext {
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.data-tooltip {
     width: 120px;
     top: 100%;
     left: 50%;
