@@ -1,5 +1,5 @@
 function createTooltip(){
-    var elems = document.querySelectorAll('.tooltipped-click');
+    var elems = document.querySelectorAll('.tooltipped');
     var options={enterDelay: 50};
     var instances = M.Tooltip.init(elems, options);
   

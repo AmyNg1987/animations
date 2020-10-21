@@ -1,0 +1,7 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": true,
+    "prettier.trailingComma": "none",
+    "prettier.enable": false,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": false
+        },

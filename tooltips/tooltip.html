@@ -6,22 +6,45 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
   <style type="text/css">
 
+container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+
+}
   </style>
-  <body class="orange">
+ <body>
+ <div class="container">
+    <a id="button" onmouseover="createTooltip();" onmouseleave="destroyTooltip();" class="tooltipped waves-effect orange darken-1 btn" data-position="bottom" data-delay="50" data-tooltip="equals Time on Page / ( Pageviews - Exits)">Avg Time on Page</a>
 
-  <div class="container" style="height:100vh">
-    <a href="javascript:;" id="button" onmouseover="createTooltip();" onmouseleave="destroyTooltip();" class="tooltipped-click info_circle btn" data-position="bottom" data-delay="50" data-tooltip="Numbers should MUST be 5 digits. Nothing more, nothing less"><i class="fa fa-info-circle"></i> Click me!</a>
-
+</div>
 
 </div>
 
 
 <!-- Compiled and minified JavaScript -->
-<script src="index.js">
-
+<script>
+function createTooltip(){
+    var elems = document.querySelectorAll('.tooltipped');
+    var options={enterDelay: 50};
+    var instances = M.Tooltip.init(elems, options);
+  
+    var instance = M.Tooltip.getInstance(document.getElementById("button"));
+    instance.open();
+  }
+  function destroyTooltip(){
+    var instance = M.Tooltip.getInstance(document.getElementById("button"));
+    if (instance){
+      instance.destroy();
+    }
+  }
 
 </script>
      </body>     
