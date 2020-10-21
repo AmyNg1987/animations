@@ -34,9 +34,16 @@
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
+<<<<<<< HEAD
 .data-tooltip {
     width: 120px;
     top: 100%;
     left: 50%;
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
+=======
+.i {
+  background-color: black;
+  color: white;
+}
+>>>>>>> abf1f578d1a3293c3a2bd76a905949c6df537f59
